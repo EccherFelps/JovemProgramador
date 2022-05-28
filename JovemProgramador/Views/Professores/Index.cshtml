@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Professores";
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Contato</th>
+            <th scope="col">Email</th>
+            <th scope="col">Cep</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Katia</td>
+            <td>28 anos </td>
+            <td>(47)99177-4897</td>
+            <td>katiaschimittp@gmail.com
+            <td>88350-665
+            <td>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a type="button" class="btn btn-dark" asp-controller="Professores" asp-action="BuscarEndereco2" asp-route-cep="88350665">Endereco</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
