@@ -61,7 +61,7 @@ namespace JovemProgramador.Controllers
         }
 
         public async Task<IActionResult> BuscarEndereco(AlunoModel aluno)
-        {
+         {
             var retorno = _alunorepositorio.BuscarId(aluno.Id);
             aluno = retorno;
             EnderecoModel enderecoModel = new();
